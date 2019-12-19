@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "standard-react",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "jest",
+    "react-hooks"
+  ],
+  "parser": "babel-eslint",
+  "globals": {
+    "window": true,
+    "navigator": true,
+    "fetch": true,
+    "document": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-fragments": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
