@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
@@ -9,31 +9,31 @@ import HomePage from 'containers/Home';
 import ProgressBarsDemo from 'containers/ProgressBarsDemo';
 import GlobalStyle from '../../global-styles';
 
-//#region Styles
-const AppWrapper = styled.div`
-  max-width: 768px;
+// #region Styles
+const BodyWrapper = styled.body`
+  margin-top: 50px;
+  height: calc(100vh - 100px);
 `;
-//#endregion Styles
+// #endregion Styles
 
-const App = () => {
+const App = () => (
+  <Fragment>
+    <Helmet>
+      <title>Progress Bars Demo</title>
+      <meta name='description' content='Progress Bars Demo App' />
+    </Helmet>
 
-  return (
-    <AppWrapper>
-      <Helmet>
-        <title>Progress Bars Demo</title>
-        <meta name="description" content="Progress Bars Demo App" />
-      </Helmet>
-
-      <Header />
+    <Header />
+    <BodyWrapper>
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/progress-bars-demo" component={ProgressBarsDemo} />
+        <Route exact path='/' component={HomePage} />
+        <Route path='/progress-bars-demo' component={ProgressBarsDemo} />
       </Switch>
-      <Footer />
+    </BodyWrapper>
+    <Footer />
 
-      <GlobalStyle />
-    </AppWrapper>
-  );
-}
+    <GlobalStyle />
+  </Fragment>
+);
 
 export default App;

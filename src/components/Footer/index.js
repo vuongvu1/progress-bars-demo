@@ -1,8 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Footer = () => {
+// #region Styles
+const Wrapper = styled.footer`
+  background-color: #20232a;
+  color: #ffffff;
+  width: 100%;
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+// #endregion Styles
 
-  return <div>This is Footer</div>;
-}
+const Footer = () => (
+  <Wrapper>This is Footer</Wrapper>
+);
 
 export default Footer;
