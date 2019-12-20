@@ -7,14 +7,14 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  font-size: 20px;
+  font-size: ${(props) => props.theme.fontSizeBig};
   font-weight: bold;
   height: 100%;
 `;
 // #endregion Styles
 
 const Home = () => (
-  <Wrapper>This is Home</Wrapper>
+  <Wrapper>This is Home Page</Wrapper>
 );
 
 export default Home;

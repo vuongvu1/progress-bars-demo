@@ -20,4 +20,16 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const theme = {
+  pink: '#ffc0cb',
+  lightBlue: '#add8e6',
+  darkBlue: '#61dafb',
+  white: '#ffffff',
+  black: '#20232a',
+
+  fontSizeBig: '20px',
+  fontSizeMedium: '16px',
+  fontSizeSmall: '12px',
+};
+
 export default GlobalStyle;

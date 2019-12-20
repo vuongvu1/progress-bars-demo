@@ -2,14 +2,19 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
+import { ThemeProvider } from 'styled-components';
+
 import App from 'containers/App';
 import store, { history } from './store';
 import * as serviceWorker from './serviceWorker';
+import { theme } from './global-styles';
 
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </ConnectedRouter>
   </Provider>,
   document.querySelector('#root'),

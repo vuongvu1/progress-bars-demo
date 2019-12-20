@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 // #region Styles
 const Wrapper = styled.header`
-  background-color: #20232a;
-  color: #ffffff;
+  background-color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.white};
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -36,11 +36,15 @@ const Wrapper = styled.header`
       &:first-child {
         flex: 0 0 auto;
         width: 20%;
-        a { color: #61dafb; }
+        a {
+          color: ${(props) => props.theme.darkBlue};
+        }
       }
       &:nth-child(2) {
         flex: 1 1 auto;
-        a { color: #ffffff; }
+        a {
+          color: ${(props) => props.theme.white};
+        }
       }
       &:last-child {
         flex: 0 0 auto;
