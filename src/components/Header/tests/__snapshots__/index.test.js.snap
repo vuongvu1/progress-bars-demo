@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render <Header /> 1`] = `
+<div>
+  <header
+    class="sc-bdVaJa jcdbzN"
+  >
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          <span
+            aria-label="Star"
+            role="img"
+          >
+            ⭐
+          </span>
+           Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/progress-bars-demo"
+        >
+          Progress Bars Demo
+        </a>
+      </li>
+      <li>
+        Hi, Anonymous
+      </li>
+    </ul>
+  </header>
+  ,
+</div>
+`;

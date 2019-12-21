@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ControlPanel /> should render <ControlPanel /> 1`] = `
+<div>
+  <div
+    class="sc-bxivhb ksgGse"
+  >
+    <div
+      class="sc-ifAKCX jdJDTU"
+    >
+      Click to select a bar
+    </div>
+    <div
+      class="sc-EHOje gNssoU"
+    >
+      <div
+        class="sc-bdVaJa edJoaQ"
+      >
+        <div>
+          26
+          %
+        </div>
+        <div
+          class="sc-bwzfXH gQkkZY"
+          value="26"
+        />
+      </div>
+      <div
+        class="sc-bdVaJa edJoaQ"
+      >
+        <div>
+          12
+          %
+        </div>
+        <div
+          class="sc-bwzfXH ieWoee"
+          value="12"
+        />
+      </div>
+      <div
+        class="sc-bdVaJa edJoaQ"
+      >
+        <div>
+          47
+          %
+        </div>
+        <div
+          class="sc-bwzfXH fNhdMA"
+          value="47"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-bZQynM fgWUIq"
+    >
+      <button
+        class="sc-htpNat bXUvhW"
+      >
+        +54
+      </button>
+      <button
+        class="sc-htpNat bXUvhW"
+      >
+        +13
+      </button>
+      <button
+        class="sc-htpNat bXUvhW"
+      >
+        -26
+      </button>
+    </div>
+  </div>
+</div>
+`;

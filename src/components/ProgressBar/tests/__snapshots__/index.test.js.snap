@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> should render <ProgressBar /> 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa edJoaQ"
+  >
+    <div>
+      22
+      %
+    </div>
+    <div
+      class="sc-bwzfXH IbSzv"
+      value="22"
+    />
+  </div>
+</div>
+`;

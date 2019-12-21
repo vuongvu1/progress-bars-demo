@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberButton /> should render <NumberButton /> 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa gGERns"
+  >
+    +30
+  </button>
+</div>
+`;
