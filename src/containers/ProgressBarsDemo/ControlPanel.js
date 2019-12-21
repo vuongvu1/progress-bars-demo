@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import ProgressBar from 'components/ProgressBar';
+import NumberButton from 'components/NumberButton';
 
 // #region Styles
 const Wrapper = styled.div`
@@ -47,7 +48,11 @@ const ControlPanel = ({ barList, buttonList, limitValue }) => {
   useEffect(() => { setBars(barList); }, [barList]);
   useEffect(() => { setButtons(buttonList); }, [buttonList]);
 
-  const changeValue = useCallback((value) => {
+  const updateValue = useCallback((value) => {
+    if (!activeBar) {
+      return;
+    }
+
     const newBars = bars.map((bar) => {
       if (activeBar === bar.id) {
         const newValue = bar.data + value;
@@ -65,8 +70,8 @@ const ControlPanel = ({ barList, buttonList, limitValue }) => {
     <Wrapper>
       <Title>
         {activeBar
-          ? `Selected (${activeBar})`
-          : 'Select a bar to update'}
+          ? `Bar ${activeBar} selected`
+          : 'Click to select a bar'}
       </Title>
       <BarsWrapper>
         {bars.map(({ id, data }) => (
@@ -83,11 +88,10 @@ const ControlPanel = ({ barList, buttonList, limitValue }) => {
 
       <ControlPanelWrapper>
         {buttons.map(({ id, data }) => (
-          <input
+          <NumberButton
             key={id}
-            type='button'
-            value={data > 0 ? `+${data}` : data}
-            onClick={() => changeValue(data)}
+            value={data}
+            updateValue={updateValue}
           />
         ))}
       </ControlPanelWrapper>
