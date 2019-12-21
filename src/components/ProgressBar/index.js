@@ -14,6 +14,11 @@ const Wrapper = styled.div`
   height: 40px;
   background-color: ${(props) => props.theme.white};
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid ${(props) => props.theme.white};
+  }
 
   ${(props) => props.isActive
     && css`
@@ -37,12 +42,19 @@ const Bar = styled.div`
 `;
 // #endregion Styles
 
-const ProgressBar = ({ value, isActive }) => (
-  <Wrapper isActive={isActive}>
-    <div>{value}%</div>
-    <Bar value={value} />
-  </Wrapper>
-);
+const ProgressBar = ({
+  id, value, limit, isActive, setActive,
+}) => {
+  const percentageValue = Math.round((value * 100) / limit);
+  const setActiveBar = () => setActive(id);
+
+  return (
+    <Wrapper isActive={isActive} onClick={setActiveBar}>
+      <div>{percentageValue}%</div>
+      <Bar value={percentageValue} />
+    </Wrapper>
+  );
+};
 
 ProgressBar.defaultProps = {
   value: 0,
@@ -52,6 +64,9 @@ ProgressBar.defaultProps = {
 ProgressBar.propTypes = {
   value: PropTypes.number,
   isActive: PropTypes.bool,
+  limit: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
 };
 
 export default ProgressBar;

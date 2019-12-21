@@ -10,7 +10,7 @@ import ProgressBarsDemo from 'containers/ProgressBarsDemo';
 import GlobalStyle from '../../global-styles';
 
 // #region Styles
-const BodyWrapper = styled.body`
+const BodyWrapper = styled.section`
   margin-top: 50px;
   height: calc(100vh - 100px);
 `;

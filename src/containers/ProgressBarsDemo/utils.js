@@ -1,26 +1,15 @@
 
-export const normalizeBarsData = ({ bars, buttons, limit }) => {
-  const barsObject = bars.reduce((object, bar, index) => ({
-    ...object,
-    [`bar_id_${index}`]: bar,
-  }), {});
+const listToIdMap = (list) => list.map((item, index) => ({ id: `id_${index}`, data: item }));
 
-  const buttonsObject = buttons.reduce((object, button, index) => ({
-    ...object,
-    [`button_id_${index}`]: button,
-  }), {});
-
-  return {
-    bars: {
-      ...barsObject,
-      allBars: bars,
-    },
-    buttons: {
-      ...buttonsObject,
-      allButtons: buttons,
-    },
-    limit,
-  };
-};
-
+export const normalizeBarsData = ({ bars, buttons, limit }) => ({
+  bars: {
+    list: listToIdMap(bars),
+    all: bars,
+  },
+  buttons: {
+    list: listToIdMap(buttons),
+    all: buttons,
+  },
+  limit,
+});
 export default normalizeBarsData;
