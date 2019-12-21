@@ -1,0 +1,8 @@
+
+export const actionTypes = {
+  FETCH_BARS_DATA: 'FETCH_BARS_DATA',
+  FETCH_BARS_DATA_SUCCESS: 'FETCH_BARS_DATA_SUCCESS',
+  FETCH_BARS_DATA_FAILURE: 'FETCH_BARS_DATA_FAILURE',
+};
+
+export default actionTypes;

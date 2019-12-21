@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
 
 import ProgressBar from 'components/ProgressBar';
+import { fetchBarsDataAction } from './actions';
 
 // #region Styles
 const Wrapper = styled.div`
@@ -26,6 +28,12 @@ const Wrapper = styled.div`
 
 const ProgressBarsDemo = () => {
   const [value, setValue] = useState(40);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBarsDataAction());
+  }, [dispatch]);
 
   return (
     <Wrapper>
