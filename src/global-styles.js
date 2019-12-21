@@ -26,6 +26,7 @@ export const theme = {
   darkBlue: '#61dafb',
   white: '#ffffff',
   black: '#20232a',
+  red: '#ff5b5b',
 
   fontSizeBig: '20px',
   fontSizeMedium: '16px',
