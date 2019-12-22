@@ -13,7 +13,7 @@ describe('Progress Bars Demo', () => {
 
     cy.visit('http://localhost:3000/progress-bars-demo');
 
-    cy.wait('@getBarsInfo');
+    // cy.wait('@getBarsInfo');
   });
 
   it('should display Progress Bars', () => {
