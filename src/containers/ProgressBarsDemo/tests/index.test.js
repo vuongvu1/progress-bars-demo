@@ -1,12 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { shallow } from 'enzyme';
-import configureStore from 'redux-mock-store';
 
+import mockStore from 'tests/utils/mockStore';
 import ProgressBarsDemo from '../index';
 
 const initialState = {};
-const mockStore = configureStore();
 
 describe('<ProgressBarsDemo />', () => {
   it('renders without crashing', () => {
