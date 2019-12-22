@@ -18,12 +18,12 @@ describe('utils', () => {
         ],
       },
       buttons: {
-        all: [45, 20, -26, -20],
+        all: [-26, -20, 20, 45],
         list: [
-          { data: 45, id: 'id_0' },
-          { data: 20, id: 'id_1' },
-          { data: -26, id: 'id_2' },
-          { data: -20, id: 'id_3' },
+          { data: -26, id: 'id_0' },
+          { data: -20, id: 'id_1' },
+          { data: 20, id: 'id_2' },
+          { data: 45, id: 'id_3' },
         ],
       },
       limit: 170,

@@ -3,7 +3,7 @@
 exports[`<Header /> should render <Header /> 1`] = `
 <div>
   <header
-    class="sc-bdVaJa jcdbzN"
+    class="sc-bdVaJa dGTFIM"
   >
     <ul>
       <li>
@@ -26,6 +26,11 @@ exports[`<Header /> should render <Header /> 1`] = `
           href="/progress-bars-demo"
         >
           Progress Bars Demo
+        </a>
+        <a
+          href="/error"
+        >
+          Error Page
         </a>
       </li>
       <li>

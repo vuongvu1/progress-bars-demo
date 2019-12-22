@@ -54,17 +54,17 @@ exports[`<ControlPanel /> should render <ControlPanel /> 1`] = `
       class="sc-bZQynM fgWUIq"
     >
       <button
-        class="sc-htpNat bXUvhW"
+        class="sc-htpNat gyqMzE"
       >
         +54
       </button>
       <button
-        class="sc-htpNat bXUvhW"
+        class="sc-htpNat gyqMzE"
       >
         +13
       </button>
       <button
-        class="sc-htpNat bXUvhW"
+        class="sc-htpNat gyqMzE"
       >
         -26
       </button>

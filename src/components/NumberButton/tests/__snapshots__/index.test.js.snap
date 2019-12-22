@@ -3,7 +3,7 @@
 exports[`<NumberButton /> should render <NumberButton /> 1`] = `
 <div>
   <button
-    class="sc-bdVaJa gGERns"
+    class="sc-bdVaJa jywRWz"
   >
     +30
   </button>
