@@ -24,11 +24,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:test": "concurrently \"yarn start\" \"yarn cypress:run\"",
     "build": "npm run lint && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --fix",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.0.2",
     "cypress": "^3.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-standard-react": "^9.2.0",
