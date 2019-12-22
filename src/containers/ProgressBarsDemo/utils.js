@@ -12,4 +12,5 @@ export const normalizeBarsData = ({ bars, buttons, limit }) => ({
   },
   limit,
 });
+
 export default normalizeBarsData;
