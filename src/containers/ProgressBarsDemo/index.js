@@ -33,7 +33,7 @@ const ProgressBarsDemo = () => {
   }, [dispatch]);
 
   return (
-    <Wrapper>
+    <Wrapper data-cy='progressBars'>
       {isLoading
         ? 'Loading...'
         : (

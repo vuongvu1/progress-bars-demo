@@ -3,20 +3,23 @@
     "airbnb",
     "plugin:react/recommended",
     "standard-react",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:cypress/recommended"
   ],
   "plugins": [
     "react",
     "import",
     "jest",
-    "react-hooks"
+    "react-hooks",
+    "cypress"
   ],
   "parser": "babel-eslint",
   "globals": {
     "window": true,
     "navigator": true,
     "fetch": true,
-    "document": true
+    "document": true,
+    "cy": true
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
@@ -25,7 +28,8 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-fragments": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "jest/expect-expect": "off"
   },
   "settings": {
     "import/resolver": {
