@@ -30,12 +30,12 @@ const Wrapper = styled.header`
 
       a {
         text-decoration: none;
-        font-weight: bold;
       }
 
       &:first-child {
         flex: 0 0 auto;
         width: 20%;
+        font-weight: bold;
         a {
           color: ${(props) => props.theme.darkBlue};
         }
@@ -44,6 +44,11 @@ const Wrapper = styled.header`
         flex: 1 1 auto;
         a {
           color: ${(props) => props.theme.white};
+          margin-right: 20px;
+
+          &:hover {
+            color: ${(props) => props.theme.darkBlue};
+          }
         }
       }
       &:last-child {
@@ -64,6 +69,7 @@ const Header = () => (
       </li>
       <li>
         <NavLink exact to='/progress-bars-demo'>Progress Bars Demo</NavLink>
+        <NavLink exact to='/error'>Error Page</NavLink>
       </li>
       <li>Hi, Anonymous</li>
     </ul>

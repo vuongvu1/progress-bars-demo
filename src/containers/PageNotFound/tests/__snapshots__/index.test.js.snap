@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageNotFound /> should render <PageNotFound /> 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa iYIqAn"
+  >
+    <span
+      aria-label="Cross"
+      role="img"
+    >
+      ❌
+    </span>
+     
+    Page Not Found
+  </div>
+</div>
+`;

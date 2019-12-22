@@ -4,9 +4,10 @@ import styled from 'styled-components';
 
 // #region Styles
 const Wrapper = styled.button`
+  width: 60px;
   background: ${(props) => props.theme.white};
   border-radius: 3px;
-  color: ${(props) => (props.isPositive ? props.theme.green : props.theme.red)};
+  color: ${(props) => (props.isPositive ? props.theme.success : props.theme.error)};
   font-weight: bold;
   margin: 10px;
   padding: 6px 10px;

@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const Bar = styled.div`
-  background-color: ${(props) => (props.value > 100 ? props.theme.red : props.theme.pink)};
+  background-color: ${(props) => (props.value > 100 ? props.theme.error : props.theme.pink)};
   height: 100%;
   width: ${(props) => (props.value > 100 ? 100 : props.value)}%;
   transition: width 300ms, background-color 300ms;

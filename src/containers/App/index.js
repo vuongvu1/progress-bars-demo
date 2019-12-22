@@ -7,6 +7,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import HomePage from 'containers/Home';
 import ProgressBarsDemo from 'containers/ProgressBarsDemo';
+import PageNotFound from 'containers/PageNotFound';
 import GlobalStyle from '../../global-styles';
 
 // #region Styles
@@ -28,6 +29,7 @@ const App = () => (
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/progress-bars-demo' component={ProgressBarsDemo} />
+        <Route path='*' component={PageNotFound} />
       </Switch>
     </BodyWrapper>
     <Footer />

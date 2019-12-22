@@ -10,16 +10,17 @@ const Wrapper = styled.div`
   font-size: ${(props) => props.theme.fontSizeBig};
   font-weight: bold;
   height: 100%;
+  color: ${(props) => props.theme.error};
 `;
 // #endregion Styles
 
-const Home = () => (
+const PageNotFound = () => (
   <Wrapper>
-    <span role='img' aria-label='Home'>
-      🏠
+    <span role='img' aria-label='Cross'>
+      ❌
     </span>{' '}
-    This is Home Page
+    Page Not Found
   </Wrapper>
 );
 
-export default Home;
+export default PageNotFound;
