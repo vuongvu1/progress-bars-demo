@@ -4,6 +4,7 @@ exports[`<Header /> should render <Header /> 1`] = `
 <div>
   <header
     class="sc-bdVaJa dGTFIM"
+    data-cy="header"
   >
     <ul>
       <li>

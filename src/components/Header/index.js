@@ -60,7 +60,7 @@ const Wrapper = styled.header`
 // #endregion Styles
 
 const Header = () => (
-  <Wrapper>
+  <Wrapper data-cy='header'>
     <ul>
       <li>
         <NavLink exact to='/'>
